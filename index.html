@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Article Preview Component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+  <div class="center card mb-3" id="main-card">
+    <div class="row no-gutters">
+      <div class="col-md-5">
+        <img src="images/drawers.jpg" id="drawers-vertical" class="card-img rounded-left-borders drawers" alt="drawers.jpg">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title bolded" id="title">Shift the overall look and feel by adding these
+            wonderful touches to
+            furniture in your home</h5>
+          <p class="card-text" id="text">Ever been in a room and felt like something was missing? Perhaps
+            it felt
+            slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+
+
+
+          <div class="row no-gutters" id="michelle-horizontal-div">
+            <div class="col-md-1">
+              <img src="images/avatar-michelle.jpg" id="michelle-horizontal-avatar" class="avatar"
+                alt="avatar-michelle.jpg">
+            </div>
+            <div class="col-md-10">
+              <p class="card-text bolded left-padding" id="michelle-horizontal-text">Michelle Appleton<br /><small
+                  class="text-muted">28 Jun
+                  2020</small></p>
+            </div>
+
+
+
+            <!-- //////////////////////////////////////////// -->
+            <div class="col-md-1" id="share-icon">
+              <div class="tooltip-div">
+                <span class="share" id="michelle-horizontal-share">
+                  &nbsp <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14">
+                    <path fill="#6E8098"
+                      d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                  </svg>
+                </span>
+
+                <div class="tooltip-content">
+                  <div class="share-div">
+                    <div class="share-text">
+                      <p class="card-text">S H A R E</p>
+                    </div>
+
+                    <div class="facebook-icon">
+                      <a href="#">
+                        <img class="facebook-icon" src="images/toppng.com-facebook-logo-white.png" alt="fb-icon.png">
+                      </a>
+                    </div>
+
+                    <div class="twitter-icon">
+                      <a href="#">
+                        <img class="twitter-icon" src="images/toppng.com-twitter-icon-white-transparent.png" alt="twt-icon.png">
+                      </a>
+                    </div>
+
+                    <div class="instagram-icon">
+                      <a href="#">
+                        <img class="instagram-icon" src="images/toppng.com-instagram-logo-white-on-black.png" alt="pin-icon.png">
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="michelle-vertical-div" style="overflow: hidden;">
+            <div style="float: left;">
+              <img src="images/avatar-michelle.jpg" id="michelle-vertical-avatar" class="avatar"
+                alt="avatar-michelle.jpg">
+            </div>
+            <div style="float: left;">
+              <p class="card-text bolded left-padding" id="michelle-vertical-text">Michelle Appleton<br /><small
+                  class="text-muted">28 Jun
+                  2020</small></p>
+            </div>
+            <!-- //////////////////////////////////////////// -->
+            <div style="float: left; margin-left: 5px;">
+              <div class="vertical-tooltip-div">
+                <span class="share" id="michelle-vertical-share">
+                  &nbsp <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14">
+                    <path fill="#6E8098"
+                      d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                  </svg>
+                </span>
+                <div class="vertical-tooltip-content">
+                  <!-- <span>Tooltip text</span> -->
+                  <div class="share-div">
+                    <div class="share-text">
+                      <p class="card-text">S H A R E</p>
+                    </div>
+
+                    <div class="facebook-icon">
+                      <a href="#">
+                        <img class="facebook-icon" src="images/toppng.com-facebook-logo-white.png" alt="fb-icon.png">
+                      </a>
+                    </div>
+
+                    <div class="twitter-icon">
+                      <a href="#">
+                        <img class="twitter-icon" src="images/toppng.com-twitter-icon-white-transparent.png" alt="ig-icon.png">
+                      </a>
+                    </div>
+
+                    <div class="instagram-icon">
+                      <a href="#">
+                        <img class="instagram-icon" src="images/toppng.com-instagram-logo-white-on-black.png" alt="pin-con.png">
+
+                      </a>
+                    </div>
+                    <span id="in-tooltip-share-icon">
+                      &nbsp <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14">
+                        <path fill="#6E8098"
+                          d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+<footer>
+  <div class="attribution" style="font-weight: 1000px; font-size: 11px; ">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.twitter.com/farahaly__">Farah Aly</a>.
+  </div>
+</footer>
+
+</html>

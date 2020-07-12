@@ -1,0 +1,351 @@
+/* @import url('//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'); */
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+
+#main-card {
+    max-width: 1000px;
+}
+
+#title {
+    font-size: 30px
+}
+
+#text {
+    font-size: 18px
+}
+.container-fluid {  
+    font-family: 'Manrope', sans-serif;
+    margin: auto;
+    margin-top: 2%;
+    width: 1350px;
+}
+
+  .container {
+    font-family: 'Manrope', sans-serif;
+
+  }
+
+.center {
+    margin: auto;
+    margin-top: 10%;
+    /* width: 60%; */
+    /* border: 3px solid hsl(209, 53%, 90%); */
+    /* padding: 10px; */
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .card-body {
+      padding: 40px;
+  }
+
+  .card {
+    border: calc(0px);
+    border-radius: calc(1em - 1px);
+  }
+
+  .drawers {
+    min-height: 100%; 
+    min-width: 100%;
+  }
+
+  .rounded-left-borders {
+    border-bottom-right-radius: calc(0px); 
+    border-bottom-left-radius: calc(1em - 1px);
+    border-top-left-radius: calc(1em - 1px);
+    border-top-right-radius: calc(0px);
+
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    font-weight: 800px;
+    text-align: center; 
+    font-family: 'Manrope', sans-serif;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.avatar {
+    width:55px; 
+    border-radius: 100%;
+}
+
+.left-padding {
+    padding-left: 30px;
+}
+
+.bolded {
+    font-weight: 800;
+}
+h2 {
+    font-weight: 800;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.share {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #EDF2F8;
+    border-radius: 50%;
+    display: inline-block;
+    padding-left: 2px;
+    padding-top: 1px;
+}
+
+.share:hover {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.share:hover path {
+    fill: #EDF2F8; 
+}
+
+.tooltip-div {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-div .tooltip-content {
+    visibility: hidden;
+    width: 220px;
+    height: 50px;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 115%;
+    left: -240%
+  }
+  .tooltip-div .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  }
+
+  .tooltip-div:hover .tooltip-content {
+    visibility: visible;
+  }
+
+
+
+  .tooltip-content {
+      margin-bottom: 2px;
+  }
+
+
+/*------------------*/
+
+.share-div { 
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 5px;
+}
+
+.share-text, .facebook-icon, .twitter-icon, .instagram-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+.share-text {
+    color: hsl(210, 46%, 95%);
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.facebook-icon  {
+    width: 30px;
+    height: 25px
+}
+.twitter-icon {
+    width: 18px;
+    height: 15px;
+    margin-top: 3px;
+    margin-right: 7px;
+}
+
+.instagram-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    /* margin-right: 2px; */
+}
+
+.facebook-icon, .twitter-icon,.instagram-icon {
+    margin-bottom: 5px;
+}
+
+footer {   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#michelle-vertical-div {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #main-card {
+      max-width: 300px;
+      max-height: 500px;
+      border: calc(.25rem - 1px);
+    }
+
+    .card {
+      border: 50%;  
+    }
+
+    .card-body {
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    #drawers-vertical {
+        border-bottom-right-radius: calc(0px); 
+        border-bottom-left-radius: calc(0px);
+        border-top-left-radius: calc(1em - 1px);
+        border-top-right-radius:calc(1em - 1px);
+    }
+    
+    #title {
+        font-size: smaller;
+        text-align: justify;
+    }
+
+    #text{
+        font-size: smaller;
+    }
+
+    #michelle-horizontal-div {
+    display: none;
+    }
+
+    #michelle-vertical-div {
+        display: inline;
+    }
+    
+    #michelle-vertical-avatar {
+        width: 37px;
+    }
+
+    #michelle-vertical-text{
+        font-size: smaller;
+    }
+
+    .share {
+        margin-left: 40px;
+        margin-right: 0px;
+        width: 37px;
+        height: 37px;
+        padding-left: 5px;
+        padding-top: 4px;
+    }
+
+    .left-padding {
+        padding-left: 10px;
+    }
+    .vertical-tooltip-div {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .vertical-tooltip-div .vertical-tooltip-content {
+        visibility: hidden;
+        width: 302px;
+        height: 70px;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(210, 46%, 95%);
+        text-align: center;
+        border-radius: calc(1em - 1px);
+        border-top-left-radius: calc(0px);
+        border-top-right-radius: calc(0px);
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -20%;
+        left: -250%;
+        /* margin-left: -60px; */
+      }
+      
+      .vertical-tooltip-div:hover .vertical-tooltip-content {
+        visibility: visible;
+      }
+
+
+      
+.share-text, .facebook-icon, .twitter-icon, .instagram-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+.share-text {
+    color: hsl(210, 46%, 95%);
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.facebook-icon  {
+    width: 35px;
+    height: 30px;
+    margin-top: 6px;
+}
+.twitter-icon {
+    width: 23px;
+    height: 20px;
+    margin-top: 9px;
+    margin-right: 8px;
+}
+
+.instagram-icon {
+    width: 23px;
+    height: 23px;
+    margin-top: 8px;
+    /* margin-right: 2px; */
+}
+
+.facebook-icon, .twitter-icon,.instagram-icon {
+    margin-bottom: 5px;
+}
+
+    #in-tooltip-share-icon {
+        margin-left: 0px;
+        width: 37px;
+        height: 37px;
+        background-color: hsl(214, 17%, 51%);
+        border-radius: 50%;
+        display: inline-block;
+        padding-top: 5px;
+        margin-top: 8px;
+    }
+
+    #in-tooltip-share-icon path {
+        fill: #EDF2F8; 
+    }
+
+  }
